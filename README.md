@@ -227,6 +227,8 @@ The main driver of the increased LOC was the dropdown needed more code and state
 ## TODO
 
 * Add PropTypes where needed
+* where it makes sense, extract inline-js css styles to the .scss files
+* Add file for customizing the Material-UI theme
 * Keep an eye out for new version of Material-UI... errors since react updated (https://facebook.github.io/react/warnings/unknown-prop.html)
 * ~~re-add validation for password-reset form~~
 * Re-add re-routing logic (login, reset, etc. etc.)
