@@ -23,8 +23,10 @@ A starting point for Meteor apps.
 
 ## Changes from Normal Base - Overall
 
-* add material ui meteor npm install material-ui
-* uses formsy-react and formsy-react-material-ui
+* added material-ui with `meteor npm install material-ui`
+* added `formsy-react` and `formsy-react-material-ui`
+* added `react-tap-event-plugin` with `meteor npm install --save react-tap-event-plugin`
+
 
 ## Changes from Normal Base - By File
 
@@ -35,14 +37,19 @@ A starting point for Meteor apps.
 * `import RaisedButton from 'material-ui/RaisedButton'`
 * use button for links to documentation
 * add link to base material-ui documentation
+* add a styles constant with some styles for things like the RasiedButtons
 
 ### imports/ui/startup/client/index.js
 
 * `import injectTapEventPlugin from 'react-tap-event-plugin';` 
-* add `injectTapEventPlugin();` see (http://www.material-ui.com/#/get-started/installation)
+* add `injectTapEventPlugin();` see: http://www.material-ui.com/#/get-started/installation
 * 
 
-### imports/ui/startup/client/routes.js
+### imports/startup/client/routes.js
 
 * `import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';`
 * wrap router in material-ui theme with `<MuiThemeProvider></MuiThemeProvider>`
+
+### imports/ui/components/loading.js
+
+* exchange loading svg for from `<CircularProgress />` http://www.material-ui.com/#/components/circular-progress
