@@ -18,7 +18,7 @@ A Material-UI starting point for Meteor/React apps.
   </tbody>
 </table>
 
-[Read the Base Documentation](http://themeteorchef.com/base)
+[Read the ORIGINAL Base Documentation](http://themeteorchef.com/base)
 
 
 ## Changes from Normal Base - Overall
