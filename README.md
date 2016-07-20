@@ -1,6 +1,12 @@
 # Base-Material-UI 
 A Material-UI starting point for Meteor/React apps. (Fork of [TheMeteorChef's Base](http://themeteorchef.com/base))
 
+| [TODO](#todo) | [COMPARISON](/COMPARISON.md) | [Examples](/README.md) |  [ORIGINAL Base Docs](http://themeteorchef.com/base) |
+|---|---|---|---|
+
+
+## Version
+
 <table>
   <tbody>
       <tr>
@@ -18,9 +24,6 @@ A Material-UI starting point for Meteor/React apps. (Fork of [TheMeteorChef's Ba
   </tbody>
 </table>
 
-
-| [TODO](#todo) | [COMPARISON](/COMPARISON.md) | [Examples](/README.md) |  [ORIGINAL Base Docs](http://themeteorchef.com/base) |
-|---|---|---|---|
 
 ## Changes from ORIGINAL Base - Overall
 
