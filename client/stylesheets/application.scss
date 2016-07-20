@@ -7,3 +7,13 @@
 @import "module/signup";
 
 @import "state/navbar";
+
+
+html, body {
+  /* font-family: 'Roboto', sans-serif; */
+  background: #FAFAFA !important;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}

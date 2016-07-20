@@ -1,11 +1,22 @@
 import React from 'react';
-import { Jumbotron } from 'react-bootstrap';
+import RaisedButton from 'material-ui/RaisedButton';
+
+styles={
+	raisedButtons: {
+		width: "300px",
+		margin: "30px 10px 10px 10px"
+	},
+	containerDiv: {
+		margin: "150px auto 0 auto",
+	}
+}
 
 export const Index = () => (
-  <Jumbotron className="text-center">
-    <h2>Base</h2>
-    <p>A starting point for Meteor applications.</p>
-    <p><a className="btn btn-success" href="https://themeteorchef.com/base" role="button">Read the Documentation</a></p>
-    <p style={ { fontSize: '16px', color: '#aaa' } }>Currently at v4.5.0</p>
-  </Jumbotron>
+  <div className="text-center" style={styles.containerDiv}>
+    <h2>Base Material-UI</h2>
+    <p>A Material-UI starting point for Meteor/React applications.</p>
+	<RaisedButton style={styles.raisedButtons} secondary={true} label="Material-UI Base Documentation" href="https://github.com/acomito/base" />
+    <RaisedButton style={styles.raisedButtons} label="Original Base Documentation" href="https://themeteorchef.com/base" />
+    <p style={ { fontSize: '14px', color: '#aaa', marginTop: "20px" } }>forked from themeteorchef <a href="https://themeteorchef.com/base">base</a> at v4.5.0</p>
+  </div>
 );

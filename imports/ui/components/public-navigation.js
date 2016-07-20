@@ -1,14 +1,21 @@
 import React from 'react';
-import { LinkContainer } from 'react-router-bootstrap';
-import { Nav, NavItem } from 'react-bootstrap';
+import AppBar from 'material-ui/AppBar';
+import FlatButton from 'material-ui/FlatButton';
+import { Link } from 'react-router';
+
+const styles = {
+  navLink: {
+    color: "#ffffff"
+  }
+}
 
 export const PublicNavigation = () => (
-  <Nav pullRight>
-    <LinkContainer to="signup">
-      <NavItem eventKey={ 1 } href="/signup">Sign Up</NavItem>
-    </LinkContainer>
-    <LinkContainer to="login">
-      <NavItem eventKey={ 2 } href="/login">Log In</NavItem>
-    </LinkContainer>
-  </Nav>
+	<div>
+    	<Link to="/signup" >
+    		<FlatButton style={styles.navLink} label="Signup" />
+    	</Link>
+    	<Link to="/login"  >
+    		<FlatButton style={styles.navLink} label="Login" />
+    	</Link>
+    </div>
 );

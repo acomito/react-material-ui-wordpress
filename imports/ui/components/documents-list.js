@@ -1,14 +1,19 @@
 import React from 'react';
-import { ListGroup, Alert } from 'react-bootstrap';
 import { Document } from './document.js';
 
+const styles = {
+	cardList: {
+		marginBottom: "100px",
+	}
+};
+
 export const DocumentsList = ({ documents }) => (
-  documents.length > 0 ? <ListGroup className="documents-list">
+  documents.length > 0 ? <div style={styles.cardList}>
     {documents.map((doc) => (
       <Document key={ doc._id } document={ doc } />
     ))}
-  </ListGroup> :
-  <Alert bsStyle="warning">No documents yet.</Alert>
+  </div> :
+  <div>No documents yet.</div>
 );
 
 DocumentsList.propTypes = {

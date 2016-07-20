@@ -4,11 +4,10 @@ import { Accounts } from 'meteor/accounts-base';
 import { Bert } from 'meteor/themeteorchef:bert';
 import { getInputValue } from './get-input-value';
 
-let component;
 
-const handleRecovery = () => {
+const handleRecovery = (email) => {
   Accounts.forgotPassword({
-    email: getInputValue(component.refs.emailAddress),
+    email: email,
   }, (error) => {
     if (error) {
       Bert.alert(error.reason, 'warning');
@@ -18,25 +17,7 @@ const handleRecovery = () => {
   });
 };
 
-const validate = () => {
-  $(component.refs.recoverPassword).validate({
-    rules: {
-      emailAddress: {
-        required: true,
-        email: true,
-      },
-    },
-    messages: {
-      emailAddress: {
-        required: 'Need an email address here.',
-        email: 'Is this email address legit?',
-      },
-    },
-    submitHandler() { handleRecovery(); },
-  });
-};
 
-export const handleRecoverPassword = (options) => {
-  component = options.component;
-  validate();
+export const handleRecoverPassword = (email) => {
+  handleRecovery(email);
 };

@@ -2,42 +2,54 @@ import React from 'react';
 import { Row, Col, ListGroupItem, FormControl, Button } from 'react-bootstrap';
 import { Bert } from 'meteor/themeteorchef:bert';
 import { updateDocument, removeDocument } from '../../api/documents/methods.js';
+import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
+import FlatButton from 'material-ui/FlatButton';
+import DeleteDialog from './delete-dialog.js';
+import UpdateDialog from './update-dialog.js';
 
-const handleUpdateDocument = (documentId, event) => {
-  const title = event.target.value.trim();
-  if (title !== '' && event.keyCode === 13) {
-    updateDocument.call({
-      _id: documentId,
-      update: { title },
-    }, (error) => {
-      if (error) {
-        Bert.alert(error.reason, 'danger');
-      } else {
-        Bert.alert('Document updated!', 'success');
-      }
+
+
+const handleUpdateDocument = (documentId, title) => {
+
+    updateDocument.call({_id: documentId, update: { title }, }, (error) => {
+      if (error) { Bert.alert(error.reason, 'danger'); return; }
+      Bert.alert('Document updated!', 'success');
     });
-  }
+
 };
 
-const handleRemoveDocument = (documentId, event) => {
-  event.preventDefault();
-  // this should be replaced with a styled solution so for now we will
-  // disable the eslint `no-alert`
-  // eslint-disable-next-line no-alert
-  if (confirm('Are you sure? This is permanent.')) {
-    removeDocument.call({
-      _id: documentId,
-    }, (error) => {
-      if (error) {
-        Bert.alert(error.reason, 'danger');
-      } else {
+const handleRemoveDocument = (documentId) => {
+
+    removeDocument.call({ _id: documentId, }, (error) => {
+      if (error) { Bert.alert(error.reason, 'danger'); return; }
         Bert.alert('Document removed!', 'success');
-      }
     });
-  }
+
 };
 
 export const Document = ({ document }) => (
+  <Card key={ document._id }>
+    <CardHeader
+      title={document.title}
+      subtitle={document._id}
+      actAsExpander={true}
+      showExpandableButton={true}
+    />
+    <CardText expandable={true}>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
+      Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+      Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
+    </CardText>
+    <CardActions expandable={true}>
+      <UpdateDialog itemType="Document" docToUpdate={{_id: document._id, title: document.title}} updateMethod={handleUpdateDocument.bind(this)} />
+      <DeleteDialog itemType="Document" deleteMethod={handleRemoveDocument.bind(this, document._id )} />
+    </CardActions>
+  </Card>
+);
+
+
+/*export const Document = ({ document }) => (
   <ListGroupItem key={ document._id }>
     <Row>
       <Col xs={ 8 } sm={ 10 }>
@@ -58,4 +70,4 @@ export const Document = ({ document }) => (
       </Col>
     </Row>
   </ListGroupItem>
-);
+);*/
