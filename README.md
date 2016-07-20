@@ -226,7 +226,9 @@ The main driver of the increased LOC was the dropdown needed more code and state
 
 ## TODO
 
-* Add PropTypes where needed
+* Add PropTypes where needed (basically, everywhere at this point.)
+* it would be cool to tie bert-alert color schemes into the material-ui color scheme
+* decision: combine delete-dialog and update-dialog components?
 * decision: flexbox grid? bootstrap grid? grid agnostic?
 * where it makes sense, extract inline-js css styles to the .scss files
 * Add file for customizing the Material-UI theme
