@@ -1,5 +1,5 @@
 # The Meteor Chef - Base - Material-ui
-A starting point for Meteor apps.
+A Material-UI starting point for Meteor/React apps.
 
 <table>
   <tbody>
