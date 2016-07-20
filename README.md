@@ -234,10 +234,11 @@ The main driver of the increased LOC was the dropdown needed more code and state
 * Add file for customizing the Material-UI theme
 * Keep an eye out for new version of Material-UI... errors since react updated (https://facebook.github.io/react/warnings/unknown-prop.html)
 * Re-add re-routing logic (login, reset, etc. etc.)
-* wire up the username to be in top-right corner of authenticated navbar (was getting an odd error when trying to do this so I just hardcoded "username" there for now)
+
 * improve documentation
 * you have to click off the input field for formsy to validate and change the submit button from disabled... minor UI blemish.
 * **Consider Other Versions:**
 * base/boilerplate for a blog/portfolio website
 * base/boilerplates with mobx/redux/flow/relay/graphql
 * ~~re-add validation for password-reset form~~
+* ~~wire up the username to be in top-right corner of authenticated navbar (was getting an odd error when trying to do this so I just hardcoded "username" there for now)~~
