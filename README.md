@@ -234,7 +234,7 @@ The main driver of the increased LOC was the dropdown needed more code and state
 * Add file for customizing the Material-UI theme
 * Keep an eye out for new version of Material-UI... errors since react updated (https://facebook.github.io/react/warnings/unknown-prop.html)
 * Re-add re-routing logic (login, reset, etc. etc.)
-
+* Collapsable nav and other responsive work
 * improve documentation
 * you have to click off the input field for formsy to validate and change the submit button from disabled... minor UI blemish.
 * **Consider Other Versions:**
