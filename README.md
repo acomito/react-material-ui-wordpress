@@ -222,3 +222,12 @@ handleLogout() {
 ```
 
 The main driver of the increased LOC was the dropdown needed more code and state for the popover to work. There are probably better options but this does the trick for now.
+
+
+## TODO
+
+* Add PropTypes where needed
+* Re-add re-routing logic (login, reset, etc. etc.)
+* wire up the username to be in top-right corner of authenticated navbar (was getting an odd error when trying to do this)
+* improve documentation
+* Make a similar version but as a base/boilerplate for a blog/portfolio website
