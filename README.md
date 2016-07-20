@@ -24,6 +24,9 @@ A Material-UI starting point for Meteor/React apps. (Fork of [TheMeteorChef's Ba
   </tbody>
 </table>
 
+## Getting Started
+
+Same as the regular base project. See https://themeteorchef.com/base/getting-started/
 
 ## Changes from ORIGINAL Base - Overall
 
