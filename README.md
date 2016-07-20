@@ -21,7 +21,7 @@ A Material-UI starting point for Meteor/React apps.
 [Read the ORIGINAL Base Documentation](http://themeteorchef.com/base)
 
 
-## Changes from Normal Base - Overall
+## Changes from ORIGINAL Base - Overall
 
 * added material-ui with `meteor npm install material-ui`
 * added `formsy-react` and `formsy-react-material-ui`
@@ -29,7 +29,7 @@ A Material-UI starting point for Meteor/React apps.
 * uses formsy instead of jquery and jquery validation
 
 
-## Changes from Normal Base - By File
+## Changes from ORIGINAL Base - By File
 
 ### imports/ui/pages/index.js
 
