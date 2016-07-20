@@ -1,4 +1,4 @@
-# The Meteor Chef - Base
+# The Meteor Chef - Base - Material-ui
 A starting point for Meteor apps.
 
 <table>
