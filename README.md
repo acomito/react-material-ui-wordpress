@@ -1,4 +1,4 @@
-# Base-Material-ui (Fork of The Meteor Chef's Base)
+# Base-Material-UI (Fork of TheMeteorChef's Base)
 A Material-UI starting point for Meteor/React apps.
 
 <table>
