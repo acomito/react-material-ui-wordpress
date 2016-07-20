@@ -224,6 +224,10 @@ handleLogout() {
 The main driver of the increased LOC was the dropdown needed more code and state for the popover to work. There are probably better options but this does the trick for now.
 
 
+## Other Stuff
+* [How to Do a FAB in the corner] (http://stackoverflow.com/questions/35828991/make-material-ui-reactjs-floatingactionbutton-float)
+* 
+
 ## TODO
 
 * Add PropTypes where needed (basically, everywhere at this point.)
