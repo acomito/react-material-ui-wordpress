@@ -240,5 +240,7 @@ The main driver of the increased LOC was the dropdown needed more code and state
 * **Consider Other Versions:**
 * base/boilerplate for a blog/portfolio website
 * base/boilerplates with mobx/redux/flow/relay/graphql
+
+## DONE
 * ~~re-add validation for password-reset form~~
 * ~~wire up the username to be in top-right corner of authenticated navbar (was getting an odd error when trying to do this so I just hardcoded "username" there for now)~~
