@@ -26,6 +26,7 @@ A starting point for Meteor apps.
 * added material-ui with `meteor npm install material-ui`
 * added `formsy-react` and `formsy-react-material-ui`
 * added `react-tap-event-plugin` with `meteor npm install --save react-tap-event-plugin`
+* uses formsy instead of jquery and jquery validation
 
 
 ## Changes from Normal Base - By File
