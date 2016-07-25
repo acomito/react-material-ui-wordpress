@@ -39,10 +39,10 @@ A simple way to get started with react, meteor and the wordpress api (Fork of [T
 ## Getting Started
 
 #### See Meteor Chef's Base 
-* As the projects are essentially the same, see https://themeteorchef.com/base/getting-started/
+As the projects are essentially the same, see https://themeteorchef.com/base/getting-started/
 
 #### Clone Repo
-*`git clone https://github.com/acomito/react-material-ui-wordpress.git <directory>`
+`git clone https://github.com/acomito/react-material-ui-wordpress.git <directory>`
 
 #### Setup the call to WP API
 
@@ -56,7 +56,7 @@ A simple way to get started with react, meteor and the wordpress api (Fork of [T
 
 #### Run Start Script
 
-* run `meteor npm start` to fire upt the app
+run `meteor npm start` to fire upt the app
 
 #### Got to LocalHost:3000 and you should be good
 
