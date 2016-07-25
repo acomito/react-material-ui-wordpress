@@ -38,10 +38,30 @@ A simple way to get started with react, meteor and the wordpress api (Fork of [T
 
 ## Getting Started
 
+#### See Meteor Chef's Base 
 * As the projects are essentially the same, see https://themeteorchef.com/base/getting-started/
+
+#### Clone Repo
+* clone the repo with `git clone https://github.com/acomito/react-material-ui-wordpress.git <name of directory to clone to>
+
+#### Setup the call to WP API
+
 * Make sure you have the wordpress api plugin installed on your wordpress website. [this youtube video may be helpful](https://www.youtube.com/watch?v=-yeW5sntRRU)
 * go into `base-material-ui-wordpress` into `imports/startup/server/rest2ddp.js` and add your endpoint/url for your blog posts, etc. (see rest2dpp docs for more info)
+
+#### Run NPM Install
+
+* run `meteor npm install`
+* after runnning `meteor npm install`, sometimes I find it is good to also run regular `npm install` just in case
+
+#### Run Start Script
+
+* run `meteor npm start` to fire upt the app
+
+#### Got to LocalHost:3000 and you should be good
+
 * If you've setup the API on your WordPress site and added the relevant url to the posts call in your meteor app, then you should be pulling in a basic list of blog posts from your WP site.
+
 
 | [TODO](#todo) | [COMPARISON](/COMPARISON.md) | [Examples](/README.md) |  [ORIGINAL Base Docs](http://themeteorchef.com/base) |
 |---|---|---|---|
