@@ -20,7 +20,7 @@ accounts-password
 accounts-base
 check
 audit-argument-checks
-browser-policy
+#browser-policy
 
 fourseven:scss
 aldeed:collection2
@@ -35,7 +35,9 @@ dburles:factory@1.0.0
 ddp-rate-limiter
 
 
+
 #WP
 okgrow:rest2ddp
 momentjs:moment
 themeteorchef:commonmark
+meteortoys:allthings
