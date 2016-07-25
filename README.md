@@ -42,7 +42,7 @@ A simple way to get started with react, meteor and the wordpress api (Fork of [T
 * As the projects are essentially the same, see https://themeteorchef.com/base/getting-started/
 
 #### Clone Repo
-* clone the repo with `git clone https://github.com/acomito/react-material-ui-wordpress.git <directory>`
+*`git clone https://github.com/acomito/react-material-ui-wordpress.git <directory>`
 
 #### Setup the call to WP API
 
