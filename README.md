@@ -1,5 +1,5 @@
-# Base-Material-UI 
-A simple way to get started with react, meteor and the wordpress api (Fork of [TheMeteorChef's Base](http://themeteorchef.com/base))
+# React-Material-UI-Wordpress
+A simple way to get started with React, Meteor, Material-UI and the WordPress api (Fork of [TheMeteorChef's Base](http://themeteorchef.com/base))
 
 ## Version
 
@@ -47,7 +47,7 @@ As the projects are essentially the same, see https://themeteorchef.com/base/get
 #### Setup the call to WP API
 
 * Make sure you have the wordpress api plugin installed on your wordpress website. [this youtube video may be helpful](https://www.youtube.com/watch?v=-yeW5sntRRU)
-* go into `base-material-ui-wordpress` into `imports/startup/server/rest2ddp.js` [(here)](https://github.com/acomito/react-material-ui-wordpress/blob/master/imports/startup/server/rest2ddp.js). Then add your endpoint/url for your blog posts, etc. (see rest2dpp docs for more info)
+* go into `base-material-ui-wordpress` into `imports/startup/server/rest2ddp.js` [(here)](https://github.com/acomito/react-material-ui-wordpress/blob/master/imports/startup/server/rest2ddp.js). Then add your endpoint/url for your blog posts, etc. (see [rest2dpp docs](https://github.com/okgrow/rest2ddp) for more info)
 
 #### Run NPM Install
 
