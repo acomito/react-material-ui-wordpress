@@ -63,17 +63,6 @@ run `meteor npm start` to fire up the app
 * If you've setup the API on your WordPress site and added the relevant url to the posts call in your meteor app, then you should be pulling in a basic list of blog posts from your WP site.
 
 
-
-## Changes from ORIGINAL Base - Overall
-
-* added material-ui with `meteor npm install material-ui`
-* added `formsy-react` and `formsy-react-material-ui`
-* added `react-tap-event-plugin` with `meteor npm install --save react-tap-event-plugin`
-* uses formsy instead of jquery and jquery validation
-* uses rest2dpp package to query WP API
-
-
-
 ## Other Stuff
 * [How to Do a FAB in the corner] (http://stackoverflow.com/questions/35828991/make-material-ui-reactjs-floatingactionbutton-float)
 * [AirBnB Style Guide for React] (https://github.com/airbnb/javascript/tree/master/react)
