@@ -1,10 +1,6 @@
 # Base-Material-UI 
 A simple way to get started with react, meteor and the wordpress api (Fork of [TheMeteorChef's Base](http://themeteorchef.com/base))
 
-| [TODO](#todo) | [COMPARISON](/COMPARISON.md) | [Examples](/README.md) |  [ORIGINAL Base Docs](http://themeteorchef.com/base) |
-|---|---|---|---|
-
-
 ## Version
 
 <table>
@@ -39,13 +35,17 @@ A simple way to get started with react, meteor and the wordpress api (Fork of [T
 
 ## Getting Started
 
-Same as the regular base project. See https://themeteorchef.com/base/getting-started/
-
-What is differet:
-
+* As the projects are essentially the same, see https://themeteorchef.com/base/getting-started/
 * Make sure you have the wordpress api plugin installed on your wordpress website. [this youtube video may be helpful](https://www.youtube.com/watch?v=-yeW5sntRRU)
-* go into base-material-ui-wordpress into `imports/startup/server/rest2ddp.js` and add your endpoint/url for your blog posts, etc. (see rest2dpp docs for more info)
-* You should be
+* go into `base-material-ui-wordpress` into `imports/startup/server/rest2ddp.js` and add your endpoint/url for your blog posts, etc. (see rest2dpp docs for more info)
+* If you've setup the API on your WordPress site and added the relevant url to the posts call in your meteor app, then you should be pulling in a basic list of blog posts from your WP site.
+
+| [TODO](#todo) | [COMPARISON](/COMPARISON.md) | [Examples](/README.md) |  [ORIGINAL Base Docs](http://themeteorchef.com/base) |
+|---|---|---|---|
+
+What is different:
+
+
 
 ## Changes from ORIGINAL Base - Overall
 
