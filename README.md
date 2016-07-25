@@ -56,17 +56,11 @@ As the projects are essentially the same, see https://themeteorchef.com/base/get
 
 #### Run Start Script
 
-run `meteor npm start` to fire upt the app
+run `meteor npm start` to fire up the app
 
 #### Got to LocalHost:3000 and you should be good
 
 * If you've setup the API on your WordPress site and added the relevant url to the posts call in your meteor app, then you should be pulling in a basic list of blog posts from your WP site.
-
-
-| [TODO](#todo) | [COMPARISON](/COMPARISON.md) | [Examples](/README.md) |  [ORIGINAL Base Docs](http://themeteorchef.com/base) |
-|---|---|---|---|
-
-What is different:
 
 
 
@@ -76,33 +70,15 @@ What is different:
 * added `formsy-react` and `formsy-react-material-ui`
 * added `react-tap-event-plugin` with `meteor npm install --save react-tap-event-plugin`
 * uses formsy instead of jquery and jquery validation
-* uses rest2dpp package to query 
-
-
+* uses rest2dpp package to query WP API
 
 
 
 ## Other Stuff
 * [How to Do a FAB in the corner] (http://stackoverflow.com/questions/35828991/make-material-ui-reactjs-floatingactionbutton-float)
-* 
+* [AirBnB Style Guide for React] (https://github.com/airbnb/javascript/tree/master/react)
+* [MaterialUp curates the best of Material Design, daily.] (http://www.materialup.com/)
+* [Material Palette] (https://www.materialpalette.com/)
 
-## TODO
 
-* Add PropTypes where needed (basically, everywhere at this point.)
-* it would be cool to tie bert-alert color schemes into the material-ui color scheme
-* decision: combine delete-dialog and update-dialog components?
-* decision: flexbox grid? bootstrap grid? grid agnostic?
-* where it makes sense, extract inline-js css styles to the .scss files
-* Add file for customizing the Material-UI theme
-* Keep an eye out for new version of Material-UI... errors since react updated (https://facebook.github.io/react/warnings/unknown-prop.html)
-* Re-add re-routing logic (login, reset, etc. etc.)
-* Collapsable nav and other responsive work
-* improve documentation
-* you have to click off the input field for formsy to validate and change the submit button from disabled... minor UI blemish.
-* **Consider Other Versions:**
-* base/boilerplate for a blog/portfolio website
-* base/boilerplates with mobx/redux/flow/relay/graphql
 
-## DONE
-* ~~re-add validation for password-reset form~~
-* ~~wire up the username to be in top-right corner of authenticated navbar (was getting an odd error when trying to do this so I just hardcoded "username" there for now)~~
