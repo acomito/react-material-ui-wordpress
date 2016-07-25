@@ -24,9 +24,25 @@ A Material-UI starting point for Meteor/React apps. (Fork of [TheMeteorChef's Ba
   </tbody>
 </table>
 
+## What You're Working With
+
+* React
+* Meteor
+* React-Router
+* Material-UI
+* React-Formsey (and React-Formsey-Material)
+* Redux, mobx, or flux are NOT incorporated at this time
+* And of course you'll be connecting with your WordPress site's API (not included in this package)
+
 ## Getting Started
 
 Same as the regular base project. See https://themeteorchef.com/base/getting-started/
+
+What is differet:
+
+* Make sure you have the wordpress api plugin installed on your wordpress website. [this youtube video may be helpful](https://www.youtube.com/watch?v=-yeW5sntRRU)
+* go into base-material-ui-wordpress into `imports/startup/server/rest2ddp.js` and add your endpoint/url for your blog posts, etc. (see rest2dpp docs for more info)
+* You should be
 
 ## Changes from ORIGINAL Base - Overall
 
@@ -34,6 +50,7 @@ Same as the regular base project. See https://themeteorchef.com/base/getting-sta
 * added `formsy-react` and `formsy-react-material-ui`
 * added `react-tap-event-plugin` with `meteor npm install --save react-tap-event-plugin`
 * uses formsy instead of jquery and jquery validation
+* uses rest2dpp package to query 
 
 
 

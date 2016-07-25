@@ -1,17 +1,18 @@
 import React from 'react';
-import { Grid } from 'react-bootstrap';
-import AppNavigation from '../containers/app-navigation';
+import { AppNavigation } from '../components/app-navigation';
+import EasyTransition from 'react-easy-transition'
+import { ContactForm } from  '../components/contact-form';
 
 export const App = React.createClass({
-  propTypes: {
-    children: React.PropTypes.element.isRequired,
-  },
+
   render() {
     return <div>
-      <AppNavigation />
-      <Grid>
-        { this.props.children }
-      </Grid>
-    </div>;
-  },
+              <ContactForm />
+            	<AppNavigation />
+		          <EasyTransition path={location.pathname} initialStyle={{opacity: 0}} transition="opacity 0.3s ease-in" finalStyle={{opacity: 1}} >
+	            	{ this.props.children }
+	            </EasyTransition>
+            </div>;
+  }
+  
 });

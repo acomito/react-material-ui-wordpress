@@ -12,8 +12,29 @@
 html, body {
   /* font-family: 'Roboto', sans-serif; */
   background: #FAFAFA !important;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+.navLinks {
+	@media screen and (max-width: 620px) {
+    	display: none !important;
+  	}
+}
+
+.mobileNav {
+	color: #fff;
+	@media screen and (min-width: 620px) {
+    	display: none !important;
+  	}
 }

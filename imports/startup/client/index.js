@@ -1,15 +1,15 @@
 import { Bert } from 'meteor/themeteorchef:bert';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
 import './routes.js';
 import injectTapEventPlugin from 'react-tap-event-plugin';
+import { Mongo } from 'meteor/mongo';
 
+// sets up bert alert, the alert system used
 Bert.defaults.style = 'growl-top-right';
 
+// sets up the collections to be used from wordpress. add more as needed. then add config in imports/startup/server/rest2dpp
+export const WordpressPosts = new Mongo.Collection('wordpressPosts');
+export const WordpressImages = new Mongo.Collection('wordpressImages');
 
-
-
-// Needed for onTouchTap
-// http://stackoverflow.com/a/34015469/988941
-//http://www.material-ui.com/#/get-started/installation
+// needed for material-ui
 injectTapEventPlugin();
+
