@@ -30,7 +30,10 @@ A simple way to get started with react, meteor and the wordpress api (Fork of [T
 * [Formsy-Material-UI](https://github.com/mbrookes/formsy-material-ui)
 * [The Meteor Chef's Base Repo](http://themeteorchef.com/base)
 * [okgrow:rest2ddp](https://github.com/okgrow/rest2ddp)
-* Redux, mobx, or flux are NOT incorporated at this time
+* [An array of different meteor packages to make developing your app (and serving it) much easier](https://github.com/acomito/react-material-ui-wordpress/blob/master/.meteor/packages)
+* ES2015 (and beyond) support.
+* Redux, mobx, or flux are *NOT* incorporated at this time
+* This does *NOT* have accounts setup (although it would be trivial to set up). It is just a front-end to consume your WP back-end.
 * And of course you'll be connecting with your WordPress site's API (not included in this package)
 
 ## Getting Started
