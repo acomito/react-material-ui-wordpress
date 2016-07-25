@@ -22,7 +22,7 @@ A simple way to get started with react, meteor and the wordpress api (Fork of [T
 
 ## What You're Working With
 
-* Meteor
+* [Meteor](https://www.meteor.com/)
 * [React](https://facebook.github.io/react/)
 * [React-Router](https://github.com/reactjs/react-router)
 * [Material-UI](http://www.material-ui.com/#/)
