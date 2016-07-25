@@ -1,5 +1,5 @@
 # Base-Material-UI 
-A Material-UI starting point for Meteor/React apps. (Fork of [TheMeteorChef's Base](http://themeteorchef.com/base))
+A simple way to get started with react, meteor and the wordpress api (Fork of [TheMeteorChef's Base](http://themeteorchef.com/base))
 
 | [TODO](#todo) | [COMPARISON](/COMPARISON.md) | [Examples](/README.md) |  [ORIGINAL Base Docs](http://themeteorchef.com/base) |
 |---|---|---|---|
@@ -26,11 +26,14 @@ A Material-UI starting point for Meteor/React apps. (Fork of [TheMeteorChef's Ba
 
 ## What You're Working With
 
-* React
 * Meteor
-* React-Router
-* Material-UI
-* React-Formsey (and React-Formsey-Material)
+* [React](https://facebook.github.io/react/)
+* [React-Router](https://github.com/reactjs/react-router)
+* [Material-UI](http://www.material-ui.com/#/)
+* [Formsy-React](https://github.com/christianalfoni/formsy-react)
+* [Formsy-Material-UI](https://github.com/mbrookes/formsy-material-ui)
+* [The Meteor Chef's Base Repo](http://themeteorchef.com/base)
+* [okgrow:rest2ddp](https://github.com/okgrow/rest2ddp)
 * Redux, mobx, or flux are NOT incorporated at this time
 * And of course you'll be connecting with your WordPress site's API (not included in this package)
 
